@@ -47,8 +47,25 @@ function getClosestCarts(data, lat, lon){
             var cartdistance = distance(latitude, longitude, lat, lon, "M");
             // create a custom data item from the filtered data
             // this will be sorted and displayed according to the users inputs
-            var dataItem = [data[i].applicant, data[i].address, cartdistance, data[i].fooditems, 
-            "<a href=\"" + data[i].schedule + "\"><i class=\"fa fa-calendar\"></i> Schedule </a>", 
+            // check that the values are valid. if not set them to unknown
+            var applicant = "Unknown";
+            if (data[i].applicant)
+              applicant = data[i].applicant;
+
+            var address = "Unknown";
+            if(data[i].address)
+              address = data[i].address;
+
+            var foodItems = "Unknown";
+            if (data[i].fooditems)
+              foodItems = data[i].fooditems;
+
+            var schedule = "Unknown"
+            if (data[i].schedule)
+              schedule = data[i].schedule;
+
+            var dataItem = [applicant, address, cartdistance, foodItems, 
+            "<a href=\"" + schedule + "\"><i class=\"fa fa-calendar\"></i> Schedule </a>", 
             data[i].latitude, data[i].longitude];
           filteredData.length = filteredData.push(dataItem);
         }

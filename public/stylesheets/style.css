@@ -1,0 +1,11 @@
+/* general styles */
+
+body {
+  background: #dddddd;
+}
+
+html, body, .container-fluid, .row-fluid {
+  height: 96%;
+}
+
+

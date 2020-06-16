@@ -1,0 +1,30 @@
+extends layout
+
+block content   
+
+    .container-fluid
+      div(class="card")
+        div(class="card-body")
+          form(onsubmit="return false" style="padding:100px; padding-top:20px")
+            div(class="form-group row")
+              i(class="fa fa-info-circle" data-toggle="tooltip" data-placement="top" title="Please enter a Latitude between -90 and 90 deg")
+              label(for="lat" class="col-sm-3") Latitude
+              input(type="text" class="col-sm-9 form-control" id="lat" name="lat" value=37.7919)
+            div(class="form-group row")
+              i(class="fa fa-info-circle" data-toggle="tooltip" data-placement="top" title="Please enter a Longitude between -180 and 180 deg")
+              label(for="lon" class="col-sm-3") Longitude
+              input(type="text" class="col-sm-9 form-control" id="lon" name="lon" value=-122.4038)
+            div(class="form-group row")
+              i(class="fa fa-info-circle" data-toggle="tooltip" data-placement="top" title="Please enter how many options you would like. The number must be greater than 0") 
+              label(for="num" class="col-sm-3") Number of Carts
+              input(type="text" class="col-sm-9 form-control" id="num" name="num" value=5)
+            input(type="submit" class="btn btn-primary" value="Submit" onClick="getCarts()")
+          div(class="table-responsive container" style="max-width:100%")
+            table(hidden id="FoodTrucks" class="display table table-striped table-bordered table-responsive dt-responsive nowrap" style="max-width:100%")
+              thead
+                tr 
+                  th Name
+                  th Food Type
+                  th Address
+                  //th Schedule
+              tbody(id="FoodTruckBody")

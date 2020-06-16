@@ -27,13 +27,13 @@ embedded systems and C++ APIs. Working on this project has given me an opportuni
 with for some time along with some new technologies and I quite enjoyed it. Below is a list of some of the key tools I used for this 
 project:
 
-bootstrap
-datatable
-ajax
-node.js
-font awesome
-jquery
-pug
+bootstrap,
+datatable,
+ajax,
+node.js,
+font awesome,
+jquery,
+pug,
 express
 
 I came across a Microsoft tutorial while doing research to get a locally hosted website up and running. 

@@ -38,7 +38,7 @@ express
 
 I came across a Microsoft tutorial while doing research to get a locally hosted website up and running. 
 https://docs.microsoft.com/en-us/windows/uwp/get-started/get-started-tutorial-fullstack-web-app This tutorial influenced a lot 
-of the technologies I used because it made making a shell web UI quick and easy. It also gave me insight into what technologies
+of the technologies I used because it made making a skeleton web UI quick and easy. It also gave me insight into what technologies
 developers at Microsoft may use or interact with. One tool that proved to be particularly useful was express. I've never used 
 express before, but I was pleased how easy setting up a bare website was with this tool. It takes care of a lot of the setup that
 gets repetitive over project. 

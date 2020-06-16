@@ -75,10 +75,6 @@ function getCarts(){
 
       num = Math.max(num,1);
 
-      console.log(lat);
-      console.log(lon);
-      console.log(num);
-
       var filteredData = getClosestCarts(data, lat, lon);
 
       var numberOfCarts = filteredData.length > num? num: filteredData.length;

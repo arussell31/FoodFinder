@@ -1,11 +1,28 @@
 /* general styles */
 
 body {
-  background: #dddddd;
+  background: #14052b;
 }
 
 html, body, .container-fluid, .row-fluid {
   height: 96%;
+}
+
+.card{
+  margin: 20px;
+  background: #ffffff;
+  border-radius: 10px;
+}
+
+h1{
+  padding: 10px;
+  text-align:center;
+  border-bottom: 2px black solid;
+}
+
+form{
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 

@@ -12,7 +12,7 @@ dataset can be found here https://data.sfgov.org/Economy-and-Community/Mobile-Fo
 their API endpoint, you will need to create a free account and generate an application token. You can find more info on how 
 to do that here https://dev.socrata.com/foundry/data.sfgov.org/rqzj-sfat 
 
-To run this application, make sur eyou are in your project folder in a cmd shell and type npm start. then navigate to
+To run this application, make sure you are in your project folder in a cmd shell and type npm start. then navigate to
 http://localhost:3000/
 
 PROJECT NOTES:

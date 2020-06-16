@@ -40,8 +40,8 @@ function getClosestCarts(data, lat, lon){
     
   var filteredData = [];
     for (var i = 0; i < data.length; i++){
-        // only consider food trucks that have been approved for a permit
-        if (data[i].status == "APPROVED"){
+        // only consider food trucks that have been approved for a permit and has a valid location
+        if (data[i].status == "APPROVED" && data[i].latitude && data[i].longitude){
             var latitude = data[i].latitude;
             var longitude = data[i].longitude;
             var cartdistance = distance(latitude, longitude, lat, lon, "M");
